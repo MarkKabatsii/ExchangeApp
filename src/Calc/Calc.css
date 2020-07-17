@@ -1,0 +1,201 @@
+.exchange {
+    padding: 15vh 0;
+}
+
+.exchange-wrapper {
+    background: #f3f4f6;
+    box-shadow: 46px 30px 55px 2px rgba(0,0,0,0.21);
+}
+
+.form-exchange{
+    height: 180px;
+    position: relative;
+}
+
+.exchange-send {
+    width: 50%;
+    background: #dee7f7;
+    height: 100%;
+}
+
+.exchange-title {
+    padding: 10px 30px 0 60px;
+}
+
+.current-title {
+    margin-left: 140px;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #0F4C81;
+    background: transparent;
+    border: none;
+}
+
+.receive {
+    line-height: 70px;
+}
+
+.exchange-list {
+}
+
+.change-button {
+    position: absolute;
+    top: 33%;
+    left: 47.57%;
+    background: #0F4C81;
+    padding: 10px;
+    border-radius: 50%;
+    border: 5px solid #f3f4f6;
+    box-shadow: 5px 2px 20px 0px rgba(0,0,0,0.3);
+}
+
+.change-button span {
+    color: #f3f4f6;
+}
+
+.exchange-input {
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #0F4C81;
+    width: 250px;
+    margin-left: 25%;
+    font-weight: 400;
+    font-size: 3rem;
+    color: #0F4C81;
+    line-height: 70px;
+}
+
+.receive {
+    width: 50%;
+    height: 100%;
+}
+
+.btn-exchange {
+    width: 160px;
+    height: 60px;
+    background: #0F4C81;
+    color: #f3f4f6;
+    position: absolute;
+    bottom: 30px;
+    right: -80px;
+    box-shadow: 30px 30px 55px 2px rgba(0,0,0,0.3);
+}
+
+.btn-exchange span {
+    margin-left: 15px;
+}
+
+.btn-exchange:hover, .btn-exchange:focus, .btn-exchange:active {
+    color: #f3f4f6;
+    box-shadow: 30px 30px 55px 2px rgba(0,0,0,0.3);
+}
+
+
+/*.calc-wrapper {*/
+/*    width: 1000px;*/
+/*    margin: 20px auto;*/
+/*    background: #fff;*/
+/*    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);*/
+/*    border-radius: 6px;*/
+/*}*/
+
+/*.calc-block {*/
+/*    width: 400px;*/
+/*    padding: 20px 0 30px 20px;*/
+/*}*/
+/*h3 {*/
+/*    margin-top: 10px;*/
+/*}*/
+
+/*input {*/
+/*    border: transparent;*/
+/*    border-bottom: 1px solid #0F4C81;*/
+/*    width: 200px;*/
+/*    font-size: 2.5rem;*/
+/*    color: #0F4C81;*/
+/*    font-weight: 600;*/
+/*    font-family: 'Oswald', sans-serif;*/
+/*}*/
+/*.calc-title {*/
+/*    display: flex;*/
+/*}*/
+
+/*select {*/
+/*    font-family: 'Oswald', sans-serif;*/
+/*    width: 90px;*/
+/*    height: 50px;*/
+/*    font-size: 2rem;*/
+/*    font-weight: 600;*/
+/*    border: none;*/
+/*    background: transparent;*/
+/*    color: #333333;*/
+/*    margin-left: 30px;*/
+/*}*/
+
+
+/*.calc-res {*/
+/*    border: transparent;*/
+/*    border-bottom: 1px solid #0F4C81;*/
+/*    width: 200px;*/
+/*    font-size: 2.5rem;*/
+/*    color: #0F4C81;*/
+/*    font-weight: 600;*/
+/*    font-family: 'Oswald', sans-serif;*/
+/*}*/
+
+/*.calc-res li {*/
+/*    margin: 10px 0;*/
+/*}*/
+
+/*.calc-base {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    font-family: 'Oswald', sans-serif;*/
+/*    width: 90px;*/
+/*    height: 50px;*/
+/*    font-size: 2rem;*/
+/*    font-weight: 600;*/
+/*    border: none;*/
+/*    background: transparent;*/
+/*    color: #333333;*/
+/*    margin-left: 30px;*/
+/*}*/
+
+/*.blockCalc {*/
+/*    width: 600px;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.form-exchange {*/
+/*    display: flex;*/
+/*    border-radius: 10px;*/
+/*    overflow: hidden;*/
+/*}*/
+
+
+/*.btn-exchange {*/
+/*    width: 250px;*/
+/*    height: auto;*/
+/*    background: #3E338A;*/
+/*    color: #fff;*/
+/*    border: none;*/
+/*    text-transform: uppercase;*/
+/*    font-family: 'Oswald', sans-serif;*/
+/*    font-size: 1.1rem;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.btn-exchange span {*/
+/*    font-size: 4rem;*/
+/*}*/
+
+/*.flex-container-chart {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: space-evenly;*/
+/*    align-content: stretch;*/
+/*    align-items: flex-start;*/
+/*}*/

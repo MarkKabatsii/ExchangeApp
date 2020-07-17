@@ -1,0 +1,20 @@
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+header{
+    margin: 0;
+    padding: 0;
+}
+
+.site-title {
+    color: #fff;
+}
+
+
+.logo {
+    padding: 30px 0;
+    background: #0F4C81;
+    text-align: center;
+}
+

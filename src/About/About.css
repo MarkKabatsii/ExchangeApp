@@ -1,0 +1,14 @@
+.green {
+  background: green;
+  width: 100%;
+  height: 50px;
+}
+
+.ws {
+  background: #408cb9;
+  width: 100px;
+  height: 50px;
+  transition: all 0.5s ease;
+}
+
+/*# sourceMappingURL=About.css.map */

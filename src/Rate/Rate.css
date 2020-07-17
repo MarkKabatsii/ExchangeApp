@@ -1,0 +1,67 @@
+.block {
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+    background: #f3f4f6;
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.15);
+    transition: all .3s ease;
+}
+
+.block:hover {
+    box-shadow: 17px 17px 20px 0 rgba(0, 0, 0, 0.15);
+    margin-top: 17px;
+}
+
+.currency-name .block div {
+    margin-bottom: 20px;
+}
+
+.block .currency-in, .block .currency-out {
+    font-size: 4rem;
+    line-height: 200px;
+    text-align: right;
+    color: #0F4C81;
+}
+
+.flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.flex-item{
+    position: relative;
+    order: 0;
+    flex: 1 1 auto;
+    align-self: auto;
+}
+
+.currency-name {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #0F4C81;
+}
+.currency-result {
+    margin-top: 10px;
+    border-top: 1px solid #dcdcdc;
+    padding-top: 10px;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1rem;
+    text-align: left;
+}

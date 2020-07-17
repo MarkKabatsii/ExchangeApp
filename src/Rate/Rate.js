@@ -1,6 +1,6 @@
 import React from 'react';
 import './Rate.css';
-
+import axios from "axios"
 import Calc from "../Calc/Calc";
 import Chart from "../Chart/Chart";
 
@@ -10,7 +10,6 @@ class Rate extends React.Component {
         this.state = {
             date: '',
             currencyRate: [],
-
         }
         this.currency = ['GBP', 'USD', 'CAD', 'ILS'];
     }
@@ -20,9 +19,11 @@ class Rate extends React.Component {
     }
 
     getRates = () => {
-        fetch('https://api.exchangeratesapi.io/latest?base=EUR')
-            .then(data => {
-                return data.json();
+        axios
+            .get('https://api.exchangeratesapi.io/latest?base=EUR')
+            .then(res => {
+                const data = res.data;
+                return data;
             })
             .then(data => {
                 this.setState({
@@ -35,7 +36,10 @@ class Rate extends React.Component {
                 this.setState({
                     currencyRate: result
                 })
-            });
+            })
+            .catch(err => {
+                console.error('err');
+            })
     }
 
     render() {
@@ -55,7 +59,8 @@ class Rate extends React.Component {
                                     (
                                         <div className="block flex-item" key={elem}>
                                             <div className="currency-name">{elem}</div>
-                                            <div className="currency-in">{this.state.currencyRate[elem].toFixed(2)}</div>
+                                            <div
+                                                className="currency-in">{this.state.currencyRate[elem].toFixed(2)}</div>
                                             <p className="currency-result">* Can be bought for 1 EUR</p>
                                         </div>
                                     )
@@ -70,7 +75,6 @@ class Rate extends React.Component {
                         <Chart/>
                     </div>
                 </div>
-
             </div>
         );
     }

@@ -19,6 +19,7 @@ class App extends React.Component{
                   <Switch>
                       <Route exact path="/" component={Rate} />
                       <Route exact path="/about" component={About} />
+                      <Route exact path="/exchange" component={Rate} />
                       <Route exact path="/contacts" component={Contacts} />
                   </Switch>
               </Router>
@@ -34,7 +35,7 @@ class App extends React.Component{
             {/*        </div>*/}
             {/*    </div>*/}
             {/*</div>*/}
-            {/*<Footer />*/}
+            <Footer />
         </div>
     );
   }

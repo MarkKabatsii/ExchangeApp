@@ -13,7 +13,9 @@ class Header extends React.Component{
                       <div className="row align-items-center">
                           <div className="col-2">
                               <div className="logo">
-                                  <h1 className="site-title">Exchange</h1>
+                                  <a href="/">
+                                      <h1 className="site-title">Exchange</h1>
+                                  </a>
                               </div>
                           </div>
                           <div className="col-8">

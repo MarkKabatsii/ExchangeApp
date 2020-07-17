@@ -1,48 +1,55 @@
 import React from 'react';
-import './Footer.css';
+import "./Footer.sass"
 
-class Footer extends React.Component{
+class Footer extends React.Component {
 
-  render() {
-    return (
-      <footer id="footer" className="footer">
-        <div className="footer-bottom">
-          <div className="container">
-            <div className="flex-container">
-              <div className="flex-item">
-                <h1 className="footer-title"><a href="https://itgid.info">2019 &copy; React. Lite Level</a></h1>
-                <p> All Rights Reserved</p>
-              </div>
-              {/*/.module-body*/}
-              <div className="flex-item">
-                <div className="module-body">
-                  <ul className="list-unstyled">
-                    <li><a href="/sitemap/" tooltip="Карта сайта">Карта сайта</a></li>
-                    <li><a href="/sitemaps.xml" target="_blank" tooltip="Google Sitemap">Google Sitemap</a></li>
-                  </ul>
+    render() {
+        return (
+            <footer id="footer" className="footer">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-2">
+                            <div className="copyright">
+                                <a href="/" className="copyright-link">
+                                    <h1 className="copyright-title">2020 &copy; ExchangeApp</h1>
+                                </a>
+                                <p className="copyright-text"> All Rights Reserved</p>
+                            </div>
+                        </div>
+                        <div className="col-8">
+                            <div className="flex-item">
+                                <div className="module-body">
+                                    <ul className="list-unstyled">
+                                        <li><a href="/sitemap/" tooltip="Карта сайта">Site map</a></li>
+                                        <li><a href="/sitemaps.xml" target="_blank" tooltip="Google Sitemap">Map</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="flex-item">
+                                <div className="module-body">
+                                    <ul className="list-unstyled">
+                                        <li><a href="/contact/" tooltip="Контакты">Контакты</a></li>
+                                        <li><a href="/d">Гарантии</a></li>
+                                        <li><a href="/s">О сервисе</a></li>
+                                        <li><a href="/o">Условия возврата</a></li>
+                                        <li><a href="/p">Соглашение о использовании сервиса</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-2">
+                            <div className="social">
+                                <p>facebook</p>
+                                <p>twitter</p>
+                                <p>instagram</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                {/*/.module-body*/}
-              </div>
-              {/*/.col*/}
-              <div className="flex-item">
-                <div className="module-body">
-                  <ul className="list-unstyled">
-                    <li><a href="/contact/" tooltip="Контакты">Контакты</a></li>
-                    <li><a href="/d">Гарантии</a></li>
-                    <li><a href="/s">О сервисе</a></li>
-                    <li><a href="/o">Условия возврата</a></li>
-                    <li><a href="/p">Соглашение о использовании сервиса</a></li>
-                  </ul>
-                </div>
-                {/*/.module-body*/}
-              </div>
-              {/*/.col*/}
-            </div>
-          </div>
-        </div>
-      </footer>
-    );
-  }
+            </footer>
+        )
+    }
 }
 
 export default Footer;

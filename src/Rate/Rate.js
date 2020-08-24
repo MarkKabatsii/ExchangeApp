@@ -72,7 +72,7 @@ class Rate extends React.Component {
                 </div>
                 <div className="row">
                     <div className="col-12">
-                        <Chart/>
+                        <Chart currency={this.currency}/>
                     </div>
                 </div>
             </div>

@@ -21,6 +21,11 @@ class Header extends React.Component{
                           <div className="col-8">
                               <Nav />
                           </div>
+                          <div className="col-2">
+                              <div className="sign-in">
+                                  <i className="fa fa-user-o" aria-hidden="true"></i>
+                              </div>
+                          </div>
                       </div>
                   </div>
               </div>

@@ -11,9 +11,9 @@ class Footer extends React.Component {
                         <div className="col-2">
                             <div className="copyright">
                                 <a href="/" className="copyright-link">
-                                    <h1 className="copyright-title">2020 &copy; ExchangeApp</h1>
+                                    <h4 className="copyright-title">2020 &copy; ExchangeApp</h4>
                                 </a>
-                                <p className="copyright-text"> All Rights Reserved</p>
+                                <p className="copyright-text"> All rights reserved</p>
                             </div>
                         </div>
                         <div className="col-8">
@@ -29,20 +29,30 @@ class Footer extends React.Component {
                             <div className="flex-item">
                                 <div className="module-body">
                                     <ul className="list-unstyled">
-                                        <li><a href="/contact/" tooltip="Контакты">Контакты</a></li>
-                                        <li><a href="/d">Гарантии</a></li>
-                                        <li><a href="/s">О сервисе</a></li>
-                                        <li><a href="/o">Условия возврата</a></li>
-                                        <li><a href="/p">Соглашение о использовании сервиса</a></li>
+                                        <li><a href="/contact" tooltip="Контакты">Contacts</a></li>
+                                        <li><a href="/d">Careers</a></li>
+                                        <li><a href="/p">Service Agreement</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div className="col-2">
-                            <div className="social">
-                                <p>facebook</p>
-                                <p>twitter</p>
-                                <p>instagram</p>
+                            <div className="social d-flex justify-content-between align-items-center">
+                                <div className="social-icon">
+                                    <a href="https://www.facebook.com" className='social-link'>
+                                        <i className="fa fa-facebook-official" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div className="social-icon">
+                                    <a href="https://www.twitter.com" className='social-link'>
+                                        <i className="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div className="social-icon">
+                                    <a href="https://www.instagram.com" className='social-link'>
+                                        <i className="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

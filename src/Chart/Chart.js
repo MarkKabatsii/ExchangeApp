@@ -5,7 +5,6 @@ import axios from "axios"
 class Chart extends React.Component {
     constructor(props) {
         super(props)
-        this.currency = ['GBP', 'USD', 'CAD', 'ILS'];
         this.state = {
             rateData: {}
         }
@@ -16,23 +15,24 @@ class Chart extends React.Component {
     }
 
     getChartData = () => {
+        console.log();
         axios
-            .get('https://api.exchangeratesapi.io/history?start_at=2020-05-01&end_at=2020-07-17&symbols=GBP,USD,CAD,ILS')
+            .get('https://api.exchangeratesapi.io/history?start_at=2020-05-01&end_at=2020-07-17&symbols='+this.props.currency.join(','))
             .then(response => response.data)
             .then(data => {
                 const db = data.rates;
                 const chart = [];
-                for (let i = 0; i < this.currency.length; i++) {
-                    chart[this.currency[i]] = {
+                for (let i = 0; i < this.props.currency.length; i++) {
+                    chart[this.props.currency[i]] = {
                         label: [],
                         data: []
                     }
                     for (let item in db) {
-                        chart[this.currency[i]]['label'].push(item);
+                        chart[this.props.currency[i]]['label'].push(item);
                     }
-                    chart[this.currency[i]]['label'].sort();
-                    for (let key in chart[this.currency[i]]['label']) {
-                        chart[this.currency[i]]['data'].push(db[chart[this.currency[i]]['label'][key]][this.currency[i]])
+                    chart[this.props.currency[i]]['label'].sort();
+                    for (let key in chart[this.props.currency[i]]['label']) {
+                        chart[this.props.currency[i]]['data'].push(db[chart[this.props.currency[i]]['label'][key]][this.props.currency[i]])
                     }
                 }
                 const rate = []

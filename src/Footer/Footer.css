@@ -1,0 +1,15 @@
+footer {
+  background: #0F4C81;
+  padding: 30px 0;
+}
+footer .copyright-link .copyright-title {
+  color: #f3f4f6;
+}
+footer .copyright-text {
+  color: #f3f4f6;
+}
+footer .social .social-icon i {
+  color: #f3f4f6;
+}
+
+/*# sourceMappingURL=Footer.css.map */
